@@ -1,1 +1,7 @@
-var hangmanWords = ["homerun", "first base", "pitcher","catcher","baseball","strike",]
+
+var hangmanWords = ["andy warhol","pop art",]
+
+document.onkeyup = function(event) {
+	// body...
+	var userGuess = event.key.toLowerCase();
+}

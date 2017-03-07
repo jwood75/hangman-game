@@ -1,0 +1,13 @@
+body{
+	background-color: #9bc3c0
+}
+
+.jumbotron{
+	font-family: 'michroma', sans-serif;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 50px;
+	background-color: #9bc3c0;
+
+}
