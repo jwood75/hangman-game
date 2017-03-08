@@ -5,6 +5,7 @@ body{
 .jumbotron{
 	font-family: 'michroma', sans-serif;
 	text-align: center;
+	letter-spacing: 3px;
 	font-weight: bold;
 	color: #fff;
 	font-size: 50px;
