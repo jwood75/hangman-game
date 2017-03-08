@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>popART Hangman</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-	<!-- linking Google Font -->
+	<!--linking Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
 
 	<!-- linking reset css -->
@@ -15,12 +18,33 @@
 	<!-- linking style css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<!-- linking javascript -->
-	<script type="text/javascript" src="assests/javascript/game.js"></script>
 </head>
-<body>
+
+<body onload="startUp()">
+	
+	<div class="row">
 
 	<h1 class="jumbotron">popArt Hangman</h1>
 
+	</div> <!-- ending row -->
+
+	<div class="row" id="mainGameBlock">
+
+		<div class="col-md-12">
+
+			<p id="answer"></p>
+
+		</div>
+		
+
+	</div> <!-- ending second row -->
+
+
+	<!-- linking Jquery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!-- linking javascript -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
+
 </html>

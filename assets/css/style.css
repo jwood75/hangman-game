@@ -11,3 +11,15 @@ body{
 	background-color: #9bc3c0;
 
 }
+
+
+.col-md-6{
+	margin: 0, 20px, 0, 20px;
+}
+
+#answer{
+	font-family: 'michroma', sans-serif;
+	color: #000;
+	text-align: center;
+	font-size: 30px;
+}
