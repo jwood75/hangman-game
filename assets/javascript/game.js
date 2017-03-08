@@ -51,5 +51,5 @@ document.onkeyup = function (event) {
 			}
 		}
 		
-		document.getElementById("answer").innerHTML = randomAnswer.join(" ");
+	document.getElementById("answer").innerHTML = randomAnswer.join(" ");
 }
