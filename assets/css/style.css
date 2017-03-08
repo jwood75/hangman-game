@@ -10,7 +10,6 @@ body{
 	color: #fff;
 	font-size: 50px;
 	background-color: #9bc3c0;
-
 }
 
 .instructions{
@@ -23,10 +22,18 @@ body{
 	left: 35%;
 }
 
-
-.col-md-6{
-	margin: 0, 20px, 0, 20px;
+.image-box{
+	height: 500px;
+	width: 500px;
+	background-color: #fff;
+	margin: 0 auto;
 }
+
+.warhol{
+	height: 500px;
+	width: auto;
+}
+
 
 #answer{
 	font-family: 'michroma', sans-serif;

@@ -1,8 +1,7 @@
 
 	//array of words for user to guess
-var hangmanWords = ["andy warhol","pop art","roy lichtenstein", "campbell's soup can","marilyn monroe","minimalism","drowning girl","commercial art",
-					   "halftone","comic art", "robert rauschenberg","still life","tom wesselmann",
-					   "just what is it that makes today's homes so different, so appealing?","richard hamilton","david hockney","a bigger splash","whaam!",];
+var hangmanWords = ["andy warhol", "pop art", "roy lichtenstein", "campbell's soup can", "marilyn monroe", "minimalism", "drowning girl", "commercial art",
+					"halftone", "comic art", "robert rauschenberg", "still life", "tom wesselmann", "richard hamilton", "david hockney", "a bigger splash", "whaam!",];
 
 	//will choose random word from above array				   
 var randomHangmanWords = hangmanWords[Math.floor(Math.random() * hangmanWords.length) ];
@@ -10,8 +9,9 @@ var randomHangmanWords = hangmanWords[Math.floor(Math.random() * hangmanWords.le
 var s;
 var count = 0;
 
-	//empty array to store answer
+	//empty array to store answer and wrong guesses
 var randomAnswer = [];
+var wrongGuess = [];
 
 	//creating blank lines for each letter of random word
 function startUp() {
@@ -49,7 +49,14 @@ document.onkeyup = function (event) {
 
 				randomAnswer[i] = userGuess;
 			}
+
+			else if (randomHangmanWords[i] !== userGuess){
+
+				wrongGuess[i] = userGuess;
+			}
+
 		}
 		
 	document.getElementById("answer").innerHTML = randomAnswer.join(" ");
+	document.getElementById("wrongGuesses").innerHTML = wrongGuess.join(" ");
 }
